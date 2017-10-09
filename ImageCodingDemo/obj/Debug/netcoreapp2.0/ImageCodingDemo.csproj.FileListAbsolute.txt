@@ -1,0 +1,11 @@
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\bin\Debug\netcoreapp2.0\ImageCodingDemo.deps.json
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\bin\Debug\netcoreapp2.0\ImageCodingDemo.runtimeconfig.json
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\bin\Debug\netcoreapp2.0\ImageCodingDemo.runtimeconfig.dev.json
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\bin\Debug\netcoreapp2.0\ImageCodingDemo.dll
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\obj\Debug\netcoreapp2.0\ImageCodingDemo.csproj.CoreCompileInputs.cache
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\obj\Debug\netcoreapp2.0\ImageCodingDemo.AssemblyInfoInputs.cache
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\obj\Debug\netcoreapp2.0\ImageCodingDemo.AssemblyInfo.cs
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\bin\Debug\netcoreapp2.0\ImageCodingDemo.pdb
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\obj\Debug\netcoreapp2.0\ImageCodingDemo.dll
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\obj\Debug\netcoreapp2.0\ImageCodingDemo.pdb
+C:\Users\Анатолій\source\repos\ImageCodingDemo\ImageCodingDemo\obj\Debug\netcoreapp2.0\ImageCodingDemo.csprojResolveAssemblyReference.cache
