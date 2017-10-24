@@ -18,10 +18,10 @@ namespace ImageCodingDemo
                 //bitmap.Drawline(199, 199, 0, 199, Color.Red);
                 //bitmap.Drawline(0, 199, 0, 0, Color.Green);
                 //bitmap.Drawline(0, 0, 199, 199, Color.Green);
-                bitmap.Drawline(0,199, 0, 199, Color.Green);
+                //bitmap.Drawline(0,199, 0, 199, Color.Green);
                 bitmap.DrawCircle(100, 100, 10, Color.Red);
                 bitmap.DrawEllipse(50,50,25,10,Color.Aqua);
-                bitmap.Hyperbole(10, 10, Color.Red);
+                bitmap.Polynome(10, 10, Color.Red);
                 bitmap.Save(filename, ImageFormat.Png);
                 
 
@@ -44,7 +44,7 @@ namespace ImageCodingDemo
             }
            
         }
-        static void Drawline2(this Bitmap bitmap, int StartX, int StartY, int EndX, int EndY, Color color)
+        static void DrawlineD(this Bitmap bitmap, int StartX, int StartY, int EndX, int EndY, Color color)
         {
          
             int dx = EndX - StartX;
@@ -90,14 +90,14 @@ namespace ImageCodingDemo
             }
 
         }
-        static void Hyperbole(this Bitmap bitmap, int a, int b, Color color)
+        static void Polynome(this Bitmap bitmap, int a, int b, Color color)
         {
-            int len = bitmap.Width* bitmap.Width + bitmap.Height* bitmap.Height;
-            for (double i = 0; i < Math.Sqrt(len); i=i+0.01)
+            int lenght = bitmap.Width* bitmap.Width + bitmap.Height* bitmap.Height;
+            for (double i = 0; i < Math.Sqrt(lenght); i=i+0.01)
             {
-                int y = (int)Math.Round(Math.Pow(i ,2)/a + b);
+                int y = (int)Math.Round(Math.Pow(i ,2)/a + b*i);
                 if (i<bitmap.Width && y<bitmap.Height) {
-                    bitmap.SetPixel((int)Math.Round(Math.Abs(i)), bitmap.Height-y, color);
+                    bitmap.SetPixel((int)Math.Round(Math.Abs(i)), bitmap.Height-y-1, color);
                     Console.WriteLine(y);
                 }
             }
