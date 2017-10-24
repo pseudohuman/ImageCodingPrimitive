@@ -18,9 +18,12 @@ namespace ImageCodingDemo
                 //bitmap.Drawline(199, 199, 0, 199, Color.Red);
                 //bitmap.Drawline(0, 199, 0, 0, Color.Green);
                 //bitmap.Drawline(0, 0, 199, 199, Color.Green);
-                //bitmap.Drawline(0,199, 0, 199, Color.Green);
+                bitmap.Drawline(0,199, 0, 199, Color.Green);
                 bitmap.DrawCircle(100, 100, 10, Color.Red);
+                bitmap.DrawEllipse(50,50,25,10,Color.Aqua);
+                bitmap.Hyperbole(10, 10, Color.Red);
                 bitmap.Save(filename, ImageFormat.Png);
+                
 
             }
             RunViewer();
@@ -72,6 +75,36 @@ namespace ImageCodingDemo
             }
 
         }
+        static void DrawEllipse(this Bitmap bitmap, int centerX, int centerY, int width, int height, Color color)
+        {
+
+            for (double i = 0; i < Math.PI * 2; i += 0.1)
+            {
+                int x = (int)Math.Round((Math.Sin(i)) * (width / 2) + centerX);
+                int y = (int)Math.Round((Math.Cos(i)) * (height / 2) + centerY);
+                if (x < bitmap.Width && y < bitmap.Height)
+                {
+                    bitmap.SetPixel(x, y, color);
+                    Console.Write($" {i}");
+                }
+            }
+
+        }
+        static void Hyperbole(this Bitmap bitmap, int a, int b, Color color)
+        {
+            int len = bitmap.Width* bitmap.Width + bitmap.Height* bitmap.Height;
+            for (double i = 0; i < Math.Sqrt(len); i=i+0.01)
+            {
+                int y = (int)Math.Round(Math.Pow(i ,2)/a + b);
+                if (i<bitmap.Width && y<bitmap.Height) {
+                    bitmap.SetPixel((int)Math.Round(Math.Abs(i)), bitmap.Height-y, color);
+                    Console.WriteLine(y);
+                }
+            }
+            
+
+        }
+
         static void RunViewer()
         {
             Process process=new Process();
